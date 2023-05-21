@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'info.picocli:picocli:4.6.1'
+}
+
+application {
+    mainClass = 'poke.App'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'poke.App'
+    }
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
