@@ -1,4 +1,4 @@
-package cli.commands;
+package cli.commands.hello;
 
 public class HelloCommand implements Runnable {
   @Override
