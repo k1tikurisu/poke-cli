@@ -22,7 +22,7 @@ public class CLI implements Runnable {
       if (command.equals("get")) {
         int limit = Integer.parseInt(option);
         new GetPokeNameList(limit).run();
-      } 
+      }
       
       if (command.equals("status")) {
         String name = option;
