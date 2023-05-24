@@ -25,23 +25,20 @@ Poke CLIは，あたかも勉強しているような真っ黒な画面で，ポ
 Web上のツールで動作します．Googleアカウントが必要です．
 
 1. エディタを開く  
-https://shell.cloud.google.com/?hl=ja  
-にアクセスし，ご自身のGoogleアカウントでログインし，下記の画面になるまで待ってください．
-<img width="1920" alt="スクリーンショット 2023-05-24 13 48 32" src="https://github.com/Wakayama-SocSEL/si-seminar-2023-poke-cli/assets/67625825/92b50f1c-40fd-493f-ad22-06b14136dda5">
+下記にアクセスしてください  
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ide.cloud.google.com/?cloudshell_git_repo=https://github.com/SocSEL-SIseminar1-2023/poke-cli.git&cloudshell_workspace=./&cloudshell_tutorial=README.md)
+
 
 <br>
 
-2. ソースコードを開く  
-下の黒いターミナルに，下記コマンドを打ってください  
-`git clone https://github.com/SocSEL-SIseminar1-2023/poke-cli.git ~/poke-cli`  
-左上の File > Open Workspaceから，poke-cliを選択して，Openを押してください．  
-
-3. pokeコマンドを使えるようにする  
-`source ./scripts/init.sh` 
+2. pokeコマンドを使えるようにする  
+上の，Terminal > New Terminalでターミナルを開き,   
+`source ./scripts/init.sh`  
+を打ってください．出力は何もないです．
 
 3. 実行する  
-上の，Terminal > Run Build Taskを押して，コンパイルしてください  
-Terminal > New Terminalでターミナルを開き，`poke hello`と入力してください．`Hello, Poke CLI`と出力されたら環境構築完了です.  
+Terminal > Run Build Taskを押して，コンパイルしてください  
+ターミナルに，`poke hello`と入力してください．`Hello, Poke CLI`と出力されたら環境構築完了です.  
 開発する際は，ソースコードを変更する>Run Build Taskをする> pokeコマンドを打って動作確認する．の手順で行ってください  
 gitを使うのが難しい方は，Cloud shell editor上で動作確認して，GitHub上でソースコードをコピペするといいと思います
 
