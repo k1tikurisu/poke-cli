@@ -1,8 +1,11 @@
 package cli.commands.hello;
 
+import cli.utils.Logger;
+
 public class HelloCommand implements Runnable {
   @Override
   public void run() {
-    System.out.println("Hello, Poke CLI!");
+    Logger.success("Hello, Poke CLI!");
+    System.out.println();
   }
 }
