@@ -47,8 +47,8 @@ gitを使うのが難しい方は，Cloud shell editor上で動作確認して�
 ## 📚 課題の例
 1つでもチャレンジしてみてください！この例以外でもなんでもOKです
 
-- 日本語名に対応させる （`src/main/resources/locales.json`）を使用してください．
 - Poke CLIの使用方法を表示するコマンド， `poke help`　を作成する
+  - helloコマンドが参考になると思います
 - 対応していないコマンド入力があった時にヘルプを表示する
   - 出力例: `poke gaga`と入力された時
   - `poke: 'gaga' is not a poke command. See 'poke help'.`
@@ -58,6 +58,7 @@ gitを使うのが難しい方は，Cloud shell editor上で動作確認して�
 - コマンドの引数のデフォルト値を用意する
 - エラーに対して適切なエラーメッセージを表示させる
 - リファクタリング
+- 日本語名に対応させる （`src/main/resources/locales.json`）を使用してください．
 - その他，あなたがポケモン対戦で欲しい機能/コマンド
 
 <br>
@@ -80,3 +81,9 @@ src/main
              ├── App.java # CLI.javaを実行する
              └── CLI.java # コマンドの引数によって処理を分岐させる
 ```
+
+## 🐕‍🦺 Poke API
+新しい機能を実装する場合は，下記ドキュメントを参考にしてください．  
+https://pokeapi.co/docs/v2  
+取得したい情報のGETのURLをHttpRequestクラスに入力すると，データを取得できます．既存の実装も参考にしてください．
+
