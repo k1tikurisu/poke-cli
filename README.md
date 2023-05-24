@@ -61,7 +61,7 @@ src/main
     └── java/cli
              ├── commands # コマンドごとにフォルダ分け (コマンドが打たれた時に対応するコマンドが実行される)
              │   ├── get
-             │   ├── hello
+             │   ├── hello # 簡単なコマンドの作り方は，HelloCommand.javaを参考にしてください
              │   └── status
              ├── utils
              │   ├── Logger.java # System.out.printに色をつけるメソッドを提供

@@ -12,11 +12,11 @@ public class GetPokeStatus implements Runnable {
 
   @Override
   public void run() {
-    // Make the API request
+    // get pokemon data
     HttpRequest fetcher = new HttpRequest("https://pokeapi.co/api/v2/pokemon/" + name);
     String res = fetcher.getResponse();
 
-    // Parse the JSON response
+    // extract stats from json
     String[] stats = res.split("\"stats\":\\[")[1].split("\\]")[0].split("\\},\\{");
 
     // Print the status of the Pokemon

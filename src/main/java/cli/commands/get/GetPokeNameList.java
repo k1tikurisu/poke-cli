@@ -11,11 +11,12 @@ public class GetPokeNameList implements Runnable {
   }
 
   public void run() {
-    // Make the API request
+    // get pokemon data
+    // reference: 
     HttpRequest fetcher = new HttpRequest("https://pokeapi.co/api/v2/pokemon?limit=" + limit);
     String res = fetcher.getResponse();
  
-    // Parse the JSON response
+    // print pokemon name
     String[] pokemonNames = res.split("\"name\":\"");
     for (int i = 1; i < pokemonNames.length; i++) {
       String pokemonName = pokemonNames[i].split("\"")[0];
