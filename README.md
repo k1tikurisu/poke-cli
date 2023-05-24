@@ -1,11 +1,11 @@
-# Poke CLI - ポケモン攻略
+# Poke CLI - ポケモン攻略ツール
 <p align="center">
   <img src="https://github.com/Wakayama-SocSEL/si-seminar-2023-poke-cli/assets/67625825/42dfb7c1-c1e6-4191-8abe-366a3fe8fa5d" width="80%" />
 </p>
 
 
 ## 🌻 サービス概要
-
+勉強しなければいけないけれど，ポケモンをしたい．  
 Poke CLIは，あたかも勉強しているような真っ黒な画面で，ポケモン攻略を進めることができます．
 
 <br>
@@ -21,7 +21,7 @@ Poke CLIは，あたかも勉強しているような真っ黒な画面で，ポ
 
 <br>
 
-## 🛠️ 使ってみる
+## 🎠 使ってみる
 Web上のツールで動作します．Googleアカウントが必要です．
 
 1. エディタを開く  
@@ -29,7 +29,21 @@ https://shell.cloud.google.com/?hl=ja
 にアクセスし，ご自身のGoogleアカウントでログインし，下記の画面になるまで待ってください．
 <img width="1920" alt="スクリーンショット 2023-05-24 13 48 32" src="https://github.com/Wakayama-SocSEL/si-seminar-2023-poke-cli/assets/67625825/92b50f1c-40fd-493f-ad22-06b14136dda5">
 
-2. ソースコードをダウンロードする  
+<br>
+
+2. ソースコードを開く  
+下の黒いターミナルに，下記コマンドを打ってください  
+`git clone https://github.com/SocSEL-SIseminar1-2023/poke-cli.git ~/poke-cli`  
+左上の File > Open Workspaceから，poke-cliを選択して，Openを押してください．  
+
+3. pokeコマンドを使えるようにする  
+`source ./scripts/init.sh` 
+
+3. 実行する  
+上の，Terminal > Run Build Taskを押して，コンパイルしてください  
+Terminal > New Terminalでターミナルを開き，`poke hello`と入力してください．`Hello, Poke CLI`と出力されたら環境構築完了です.  
+開発する際は，ソースコードを変更する>Run Build Taskをする> pokeコマンドを打って動作確認する．の手順で行ってください  
+gitを使うのが難しい方は，Cloud shell editor上で動作確認して，GitHub上でソースコードをコピペするといいと思います
 
 <br>
 
@@ -69,4 +83,3 @@ src/main
              ├── App.java # CLI.javaを実行する
              └── CLI.java # コマンドの引数によって処理を分岐させる
 ```
-
