@@ -12,7 +12,7 @@ public class GetPokeNameList implements Runnable {
 
   public void run() {
     // get pokemon data
-    // reference: 
+    // reference: https://pokeapi.co/docs/v2#pokemon
     HttpRequest fetcher = new HttpRequest("https://pokeapi.co/api/v2/pokemon?limit=" + limit);
     String res = fetcher.getResponse();
  
