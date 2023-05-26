@@ -16,7 +16,7 @@ Poke CLIは，あたかも勉強しているような真っ黒な画面で，ポ
 `poke get 数字`
 - ポケモンの名前を数字分リスト表示します
 
-`poke status　ポケモン名`
+`poke status　ポケモン名(英名)`
 - 指定されたポケモンの種族値を表示します
 
 <br>
@@ -29,17 +29,17 @@ Web上のツールで動作します．Googleアカウントが必要です．
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ide.cloud.google.com/?cloudshell_git_repo=https://github.com/SocSEL-SIseminar1-2023/poke-cli.git&cloudshell_workspace=./&cloudshell_tutorial=README.md)
 
 
-<br>
-
 2. pokeコマンドを使えるようにする  
 上の，Terminal > New Terminalでターミナルを開き,   
 `source ./scripts/init.sh`  
-を打ってください．出力は何もないです．
+を打ってください．何も出力はないです．
 
-3. 実行する  
+3. 使ってみる  
 Terminal > Run Build Taskを押して，コンパイルしてください  
 ターミナルに，`poke hello`と入力してください．`Hello, Poke CLI`と出力されたら環境構築完了です.  
-開発する際は，ソースコードを変更する>Run Build Taskをする> pokeコマンドを打って動作確認する．の手順で行ってください  
+
+4. 開発する  
+ソースコードを変更する>Run Build Taskをする> pokeコマンドを打って動作確認する．の手順で行ってください  
 gitを使うのが難しい方は，Cloud shell editor上で動作確認して，GitHub上でソースコードをコピペするといいと思います
 
 <br>
