@@ -12,15 +12,15 @@ public class GetPokeStatus implements Runnable {
 
   @Override
   public void run() {
-    // get pokemon data
-    // reference: https://pokeapi.co/docs/v2#pokemon
+    // ポケモンのデータを取得する
+    // 参照: https://pokeapi.co/docs/v2#pokemon
     HttpRequest fetcher = new HttpRequest("https://pokeapi.co/api/v2/pokemon/" + name);
     String res = fetcher.getResponse();
 
-    // extract stats from res
+    // resからstatsを抜き出す
     String[] stats = res.split("\"stats\":\\[")[1].split("\\]")[0].split("\\},\\{");
 
-    // Print the status of the Pokemon
+    // 種族値を表示させる
     Logger.attention("Pokemon status for " + name + ":");
     System.out.println();
     for (String stat: stats) {
