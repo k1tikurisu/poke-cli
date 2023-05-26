@@ -1,4 +1,4 @@
-# Poke CLI - ポケモン攻略ツール (難易度: たぶん中)
+# Poke CLI - ポケモン攻略ツール (難易度: ピカ中)
 <p align="center">
   <img src="https://github.com/Wakayama-SocSEL/si-seminar-2023-poke-cli/assets/67625825/42dfb7c1-c1e6-4191-8abe-366a3fe8fa5d" width="80%" />
 </p>
