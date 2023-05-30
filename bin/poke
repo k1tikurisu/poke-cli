@@ -1,2 +1,4 @@
 #!/bin/bash
-java -jar ./build/libs/poke-cli.jar "$@"
+
+directory=$(basename $(pwd))
+java -jar ./build/libs/$directory.jar "$@"
