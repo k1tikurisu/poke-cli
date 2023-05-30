@@ -1,2 +1,4 @@
 #!/bin/bash
-export PATH="~/cloudshell_open/poke-cli/bin:$PATH"
+
+current_dir=$(pwd)
+export PATH="$current_dir/bin:$PATH"

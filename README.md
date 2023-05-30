@@ -32,10 +32,10 @@ Web上のツールで動作します．Googleアカウントが必要です．
 2. pokeコマンドを使えるようにする  
 上の，Terminal > New Terminalでターミナルを開き,   
 `source ./scripts/init.sh`  
-を打ってください．何も出力はないです．
+を打ってください．何も出力はないです． 
 
 3. 使ってみる  
-Terminal > Run Build Taskを押して，コンパイルしてください  
+Terminal > Run Build Taskを押して，コンパイルしてください.ターミナルに`gradle build`と入力することでもコンパイルできます．  
 ターミナルに，`poke hello`と入力してください．`Hello, Poke CLI`と出力されたら環境構築完了です.  
 
 4. 開発する  
